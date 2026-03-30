@@ -1,0 +1,31 @@
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+
+# Output options
+addopts = """
+    -v
+    --strict-markers
+    --tb=short
+    --disable-warnings
+"""
+
+# Coverage options (requires pytest-cov)
+# Run: pytest --cov
+[tool.coverage.run]
+source = ["et_service", "et_dao", "et_api"]
+omit = [
+    "*/tests/*",
+    "*/__pycache__/*",
+    "*/site-packages/*",
+    "*/venv/*",
+    "*/.venv/*",
+]
+
+[tool.coverage.report]
+precision = 2
+show_missing = true
+skip_covered = false
