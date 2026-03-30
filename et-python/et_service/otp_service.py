@@ -9,7 +9,7 @@ from email.mime.multipart import MIMEMultipart
 SMTP_HOST     = "smtp.gmail.com"
 SMTP_PORT     = 587
 SMTP_USER     = "nirmaldummy@gmail.com"       # <-- update
-SMTP_PASSWORD = "ncqx lbqx wbnl yyjj"          # <-- update (Gmail App Password)
+SMTP_PASSWORD = "Enter Your 16 char Password"          # <-- update (Gmail App Password)
 FROM_NAME     = "EagleTrust Bank"
 
 OTP_EXPIRY_MINUTES = 10
